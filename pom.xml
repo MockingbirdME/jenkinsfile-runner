@@ -28,7 +28,7 @@ THE SOFTWARE.
   <parent>
     <groupId>org.jenkins-ci</groupId>
     <artifactId>jenkins</artifactId>
-    <version>1.85</version>
+    <version>1.95</version>
     <relativePath />
   </parent>
 
@@ -61,14 +61,14 @@ THE SOFTWARE.
   </modules>
 
   <properties>
-    <revision>1.0-beta-32</revision>
+    <revision>1.0-beta-32-dev-test</revision>
     <changelist>-SNAPSHOT</changelist>
     <gitHubRepo>jenkinsci/jenkinsfile-runner</gitHubRepo>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.level>11</java.level>
-    <jenkins.version>2.346.1</jenkins.version>
-    <jenkins.bom.baseline>bom-2.346.x</jenkins.bom.baseline>
-    <jenkins.bom.version>1500.ve4d05cd32975</jenkins.bom.version>
+    <jenkins.version>2.387.1</jenkins.version>
+    <jenkins.bom.baseline>bom-2.387.x</jenkins.bom.baseline>
+    <jenkins.bom.version>1935.v530f4395930f</jenkins.bom.version>
     <jetty.version>9.4.43.v20210629</jetty.version>
     <jenkins-test-harness.version>1589.vc23fca066d5c</jenkins-test-harness.version>
     <!--TODO: Reenable once all the issues are fixed (JENKINS-57353)-->
@@ -123,7 +123,7 @@ THE SOFTWARE.
     <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs-annotations</artifactId>
-      <version>4.7.1</version>
+      <version>4.7.3</version>
     </dependency>
     <dependency>
       <groupId>com.google.code.findbugs</groupId>
