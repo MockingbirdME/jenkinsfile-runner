@@ -47,4 +47,5 @@ COPY /packaging/docker/unix/jenkinsfile-runner-launcher /app/bin
 VOLUME /build
 VOLUME /usr/share/jenkins/ref/casc
 
-ENTRYPOINT ["/app/bin/jenkinsfile-runner-launcher"]
+# ENTRYPOINT ["/app/bin/jenkinsfile-runner-launcher"]
+ENTRYPOINT [ "/bin/bash" ]
