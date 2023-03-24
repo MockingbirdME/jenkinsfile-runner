@@ -40,6 +40,7 @@ RUN mkdir -p /app /usr/share/jenkins/ref/plugins /usr/share/jenkins/ref/casc /ap
     && wget $JENKINS_PM_URL -O /app/bin/jenkins-plugin-manager.jar
 
 COPY --from=jenkinsfilerunner-build /app/jenkins /app/jenkins
+COPY --from=jenkinsfilerunner-build /app/jenkins/executable /app/jenkins
 COPY --from=jenkinsfilerunner-build /jenkinsfile-runner/app/target/appassembler /app
 COPY --from=jenkinsfilerunner-build /jenkinsfile-runner/vanilla-package/target/plugins /usr/share/jenkins/ref/plugins
 COPY /packaging/docker/unix/jenkinsfile-runner-launcher /app/bin
