@@ -64,6 +64,10 @@
           <groupId>com.google.code.gson</groupId>
           <artifactId>gson</artifactId>
         </exclusion>
+        <exclusion>
+          <groupId>org.apache.ivy</groupId>
+          <artifactId>ivy</artifactId>
+        </exclusion>
       </exclusions>
     </dependency>
     <dependency>
@@ -86,6 +90,12 @@
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>http_request</artifactId>
       <version>1.16</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.apache.httpcomponents</groupId>
+          <artifactId>httpasyncclient</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
 
     <!-- Upper bounds -->
@@ -129,6 +139,10 @@
         <exclusion>
           <groupId>org.apache.httpcomponents</groupId>
           <artifactId>httpcore</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.apache.httpcomponents</groupId>
+          <artifactId>httpcore-nio</artifactId>
         </exclusion>
         <exclusion>
           <groupId>org.apache.httpcomponents</groupId>
